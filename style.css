@@ -289,6 +289,59 @@ body {
   }
 }
 
+#share-btn {
+  position: fixed;
+  top: 20px;
+  right: 90px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  z-index: 1100;
+}
+
+#share-btn img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Hover efekt */
+#share-btn:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 5px #000) brightness(1.2);
+}
+
+/* CTA tooltip */
+#share-btn::after {
+  content: "Share on X! #MyFIFA15Pack";
+  position: absolute;
+  top: 50%;
+  right: 60px; 
+  transform: translateY(-50%);
+  background: #000;
+  color: #fff;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Pokazanie CTA przy hover */
+#share-btn:hover::after {
+  opacity: 1;
+  transform: translateY(-50%) translateX(-5px);
+}
+
+@media (max-width: 1200px) {
+  #share-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 
 
