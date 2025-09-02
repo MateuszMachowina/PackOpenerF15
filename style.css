@@ -19,9 +19,10 @@ body {
   animation: pulse-logo 3s infinite alternate; /* subtle logo glow animation */
 }
 
-#main-logo {
-  margin-top: 60px; /* 60px below top of viewport */
-  text-align: center; 
+@media (max-width: 1200px) {
+  #main-logo {
+    margin-top: 80px; /* mniej na małych ekranach */
+  }
 }
 
 @keyframes pulse-logo {
@@ -257,6 +258,7 @@ body {
 #author-sign:hover {
   transform: scale(1.05); /* subtle hover effect */
 }
+
 
 
 
