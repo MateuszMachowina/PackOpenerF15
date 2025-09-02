@@ -47,32 +47,29 @@ body {
   filter: drop-shadow(0 0 5px gold); /* subtle hover glow */
 }
 
+/* Back and Save buttons - responsive positioning */
+#back-btn, #save-btn {
+  position: fixed;  /* fixed to stay visible on all screen sizes */
+  bottom: env(safe-area-inset-bottom, 20px); /* safe area for iOS/Android bottom bars */
+  width: 150px;     /* keep the same size */
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+/* Back button - right aligned */
 #back-btn {
-  position: absolute;
-  bottom: 20px;           /* distance from bottom of container */
-  right: 20px;            /* distance from right */
-  width: 150px;           /* button size */
-  cursor: pointer;
-  transition: transform 0.2s ease, filter 0.2s ease;
+  right: 20px;  /* distance from right edge */
 }
 
-#back-btn:hover {
-  transform: scale(1.05);
-  filter: drop-shadow(0 0 5px rgb(19, 19, 19)) brightness(1.2);
-}
-
+/* Save button - placed to the left of back button */
 #save-btn {
-  position: absolute;
-  bottom: 20px;           /* same vertical position as back button */
-  right: 190px;           /* slightly left from back button */
-  width: 150px;           /* same size as back button */
-  cursor: pointer;
-  transition: transform 0.2s ease, filter 0.2s ease;
+  right: 180px;  /* distance from right edge, next to back button */
 }
 
-#save-btn:hover {
-  transform: scale(1.05);
-  filter: drop-shadow(0 0 5px rgb(19, 19, 19)) brightness(1.2);
+/* Hover effects for both buttons */
+#back-btn:hover, #save-btn:hover {
+  transform: scale(1.05);  /* enlarge slightly on hover/tap */
+  filter: drop-shadow(0 0 5px rgb(19, 19, 19)) brightness(1.2); /* add glow effect */
 }
 
 #pack-container {
@@ -268,6 +265,7 @@ body {
 }
 
 }
+
 
 
 
