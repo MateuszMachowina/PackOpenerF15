@@ -6,6 +6,25 @@ Pack Opener is an interactive football card pack opening simulator. Users can op
 
 The simulator uses a rarity algorithm based on player rating and card color to weight the chances of drawing rarer cards.
 
+## 🎉 Personal Note  
+
+This project was created as a tribute to my very first steps in IT – on the 10th anniversary of my first **FIFA Pack Opener**, built in Scratch over 10 years ago (2015):  
+
+<details>
+  <summary><strong>✨ See My Scratch Projects</strong></summary>
+
+- ⚽ [FIFA 15 - Mini FUT](https://scratch.mit.edu/projects/75730628/)
+- ⚽ [FIFA 16 - Mini FUT](https://scratch.mit.edu/projects/251721395/)
+- ⚽ [FIFA 17 - Mini FUT](https://scratch.mit.edu/projects/134293944/)
+- ⚽ [FIFA 19 - Mini FUT](https://scratch.mit.edu/projects/68231368/)
+- 🌐 [More Projects on My Scratch Profile](https://scratch.mit.edu/users/Maszek/)
+
+</details>
+
+
+I have always learned by setting myself challenges, building projects and solving problems as they appeared. That approach guided me back then in Scratch and it still guides me today in technologies like **VBA, Power Automate, UiPath, and Python**. 🚀  
+
+
 ---
 
 ## ✨ Features
