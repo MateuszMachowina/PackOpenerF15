@@ -39,8 +39,8 @@ Three Python scripts and one Excel file were used to prepare data for this proje
 
 The data and graphics were sourced from:  
 
-- 🥗 [Foodbin](https://foodbin.com) – Card information and graphics.  
-- 🌐 [SoFiFa.com](https://sofifa.com) – Player statistics.
+- 🌐 [Futbin](https://www.futbin.com/15/players) – Card information and graphics.  
+- 🌐 [SoFiFa.com](https://sofifa.com/players) – Player statistics.
 
 ---
 
