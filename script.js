@@ -161,9 +161,9 @@ function openPack() {
     // price display with proper formatting
     const coins = document.createElement('div');
     coins.className = 'coins';
-    let price = parseInt(player.Coins.replace(/,/g, ''));
+    let price = parseFloat(player.Coins.replace(',', '.'));
     if (isNaN(price)) price = 0;
-
+    
     if (price >= 1000000) {
       coins.textContent = (price / 1000000).toFixed(2) + "M coins";
     } else if (price >= 1000) {
@@ -191,4 +191,5 @@ function resetPack() {
   menu.style.alignItems = 'center';
   menu.style.height = '100vh';
 }
+
 
