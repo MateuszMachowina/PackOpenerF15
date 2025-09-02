@@ -1,29 +1,21 @@
 # FIFA 15 Pack Opener ⚽
 
-[Click here to play the game! 🎮](https://mateuszmachowina.github.io/PackOpenerF15/)
+- [🎮 Click here to play the game!](https://mateuszmachowina.github.io/PackOpenerF15/)
 
 Pack Opener is an interactive football card pack opening simulator. Users can open virtual packs similar to FIFA Ultimate Team, view six unique player cards per pack and take a screenshot of their best pack, while listening to the official FIFA 15 Spotify playlist.  
 
-The simulator uses a rarity algorithm based on player rating and card color to weight the chances of drawing rarer cards.
-
 ## 🎉 Personal Note  
 
-This project was created as a tribute to my very first steps in IT – on the 10th anniversary of my first **FIFA Pack Opener**, built in Scratch over 10 years ago (2015):  
+This project was created as a tribute to my very first steps in IT – on the 10th anniversary of my first **FIFA Pack Opener**, built in Scratch over 10 years ago (2015).
+I have always learned by setting myself challenges, building projects and solving problems as they appeared. That approach guided me back then in Scratch and it still guides me today in technologies like **VBA, Power Automate, UiPath and Python**. 🚀 
 
-<details>
-  <summary><strong>✨ See My Scratch Projects</strong></summary>
+## 📚 My Scratch Projects
 
 - ⚽ [FIFA 15 - Mini FUT](https://scratch.mit.edu/projects/75730628/)
 - ⚽ [FIFA 16 - Mini FUT](https://scratch.mit.edu/projects/251721395/)
 - ⚽ [FIFA 17 - Mini FUT](https://scratch.mit.edu/projects/134293944/)
 - ⚽ [FIFA 19 - Mini FUT](https://scratch.mit.edu/projects/68231368/)
-- 🌐 [More Projects on My Scratch Profile](https://scratch.mit.edu/users/Maszek/)
-
-</details>
-
-
-I have always learned by setting myself challenges, building projects and solving problems as they appeared. That approach guided me back then in Scratch and it still guides me today in technologies like **VBA, Power Automate, UiPath, and Python**. 🚀  
-
+- 🌐 [More projects on my profile!](https://scratch.mit.edu/users/Maszek/)
 
 ---
 
