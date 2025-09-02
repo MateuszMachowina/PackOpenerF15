@@ -250,21 +250,8 @@ body {
   transform: scale(1.05); /* subtle hover effect */
 }
 
-/* Responsive adjustments for small screens */
-@media (max-width: 500px) {
-  #back-btn, #save-btn {
-    width: 100px;        /* zmniejszamy szerokość przycisków */
-    bottom: 10px;
-  }
-  #back-btn {
-    right: 10px;
-  }
-  #save-btn {
-    right: 120px;        /* zachowujemy odstęp między przyciskami */
-  }
-}
 
-}
+
 
 
 
