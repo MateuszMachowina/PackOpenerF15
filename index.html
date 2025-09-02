@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Pack Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Logo instead of title -->
+  <div id="main-logo" style="text-align: center; margin: 20px 0;">
+    <img src="assets/ui/main_logo.png" alt="Pack Simulator" style="width: 400px; max-width: 90%; height: auto;">
+  </div>
+
+  <!-- Main menu -->
+  <div id="menu">
+    <img id="pack-img" src="assets/ui/pack.png" alt="Pack" onclick="openPack()">
+  </div>
+
+  <!-- Pack container with cards and action buttons -->
+  <div id="pack-container">
+    <div id="cards" class="cards"></div>
+
+    <!-- Back button -->
+    <img id="back-btn" src="assets/ui/back.png" alt="Back" onclick="resetPack()">
+
+    <!-- Save button as image -->
+    <img id="save-btn" src="assets/ui/save.png" alt="Save pack">
+  </div>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+
+  <!-- html2canvas library to capture screenshots -->
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+  <!-- Pack save screenshot logic -->
+  <script>
+    const saveBtn = document.getElementById('save-btn');
+
+    saveBtn.addEventListener('click', () => {
+
+      // Take screenshot of entire body to capture background, logo, and opened pack
+      html2canvas(document.body).then(canvas => {
+        const link = document.createElement('a');
+        link.download = 'moja_paczka.png';  // default download filename
+        link.href = canvas.toDataURL();
+        link.click();
+
+        // Ensure save button remains visible after screenshot
+        saveBtn.style.display = 'block';
+      });
+    });
+  </script>
+
+  <!-- Author signature linking to GitHub -->
+  <a href="https://github.com/MateuszMachowina" target="_blank" id="author-sign">© 2025 MateuszMachowina</a>
+
+</body>
+</html>

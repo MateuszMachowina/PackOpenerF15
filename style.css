@@ -1,0 +1,254 @@
+html, body {
+  height: 100%;          /* set full viewport height */
+  margin: 0;             /* remove default margins */
+  overflow: hidden;      /* prevent scrolling */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #222 url('assets/ui/background.png') no-repeat center center fixed;
+  background-size: cover; /* cover entire viewport */
+  color: white;
+}
+
+#main-logo img {
+  width: 400px;           
+  max-width: 90%;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  animation: pulse-logo 3s infinite alternate; /* subtle logo glow animation */
+}
+
+@keyframes pulse-logo {
+  0% { filter: drop-shadow(0 0 1px rgb(255, 255, 255)); }
+  50% { filter: drop-shadow(0 0 3px rgb(255, 255, 255)); }
+  100% { filter: drop-shadow(0 0 1px rgb(255, 255, 255)); }
+}
+
+#menu {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;     /* center vertically */
+  height: 100vh;           /* fill viewport height */
+}
+
+#pack-img {
+  width: 243px;           
+  height: 353px;          
+  object-fit: cover;       /* maintain aspect ratio, crop if needed */
+  cursor: pointer;
+  display: block;
+  margin: -350px auto 0 auto; /* adjust vertical positioning */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+#pack-img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 5px gold); /* subtle hover glow */
+}
+
+#back-btn {
+  position: absolute;
+  bottom: 20px;           /* distance from bottom of container */
+  right: 20px;            /* distance from right */
+  width: 150px;           /* button size */
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+#back-btn:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 5px rgb(19, 19, 19)) brightness(1.2);
+}
+
+#save-btn {
+  position: absolute;
+  bottom: 20px;           /* same vertical position as back button */
+  right: 190px;           /* slightly left from back button */
+  width: 150px;           /* same size as back button */
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+#save-btn:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 5px rgb(19, 19, 19)) brightness(1.2);
+}
+
+#pack-container {
+  display: none;          /* hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  justify-content: center; /* center content horizontally */
+  align-items: center;     /* center content vertically */
+  background: rgba(0,0,0,0.1); /* semi-transparent overlay */
+  z-index: 1000;           /* on top of other elements */
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;               /* spacing between cards */
+}
+
+.card {
+  position: relative;
+  width: 243px;
+  height: 353px;
+  background-size: cover;
+  border-radius: 12px;
+  overflow: visible;       /* allow shadow to overflow */
+  animation: pulse-shadow 3s infinite alternate; /* subtle card glow animation */
+  filter: drop-shadow(0 0 3px var(--card-color));
+}
+
+/* initial state of card before animation */
+.card {
+  opacity: 0;
+  transform: translateY(50px) rotate(-5deg);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* card shown after pack open */
+.card.show {
+  opacity: 1;
+  transform: translateY(0) rotate(0deg);
+}
+
+/* coin price display */
+.card .coins {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  background: rgba(0,0,0,0.5);
+  padding: 2px 6px;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* show price on hover */
+.card:hover .coins {
+  opacity: 1;
+}
+
+@keyframes pulse-shadow {
+  0% { filter: drop-shadow(0 0 3px var(--card-color)) brightness(0.95); }
+  50% { filter: drop-shadow(0 0 8px var(--card-color)) brightness(1.0); }
+  100% { filter: drop-shadow(0 0 3px var(--card-color)) brightness(0.95); }
+}
+
+/* player name */
+.name {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+}
+
+/* rating and position */
+.rating {
+  position: absolute;
+  top: 60px;
+  left: 28px;
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+}
+
+.position {
+  position: absolute;
+  top: 68px;
+  left: 68px;             /* slightly right of rating */
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+/* club logo and nation flag */
+.club {
+  position: absolute;
+  top: 110px;
+  left: 35px;
+  width: 35px;
+}
+
+.nation {
+  position: absolute;
+  top: 150px;
+  left: 35px;
+  width: 35px;
+}
+
+/* player face */
+.face {
+  position: absolute;
+  top: 63px;
+  left: 105px;
+  width: 120px;
+  height: 120px;
+}
+
+/* stats container */
+.stats {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 30px;
+  font-weight: bold;
+  font-size: 19px;
+  color: white;
+}
+
+/* stats columns */
+.stats .col {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  text-align: left;
+}
+
+/* stat value and label */
+.stats .stat {
+  display: flex;
+  gap: 5px;
+}
+
+.stats .stat .label {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* author signature in bottom-left corner */
+#author-sign {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: rgba(0,0,0,0.5);
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  z-index: 2000;  /* always on top */
+}
+
+#author-sign:hover {
+  transform: scale(1.05); /* subtle hover effect */
+}
