@@ -47,23 +47,23 @@ body {
   filter: drop-shadow(0 0 5px gold); /* subtle hover glow */
 }
 
-/* Back and Save buttons - responsive positioning */
+
 #back-btn, #save-btn {
-  position: fixed;  /* fixed to stay visible on all screen sizes */
-  bottom: calc(env(safe-area-inset-bottom, 20px) + 30px);  /* safe area for iOS/Android bottom bars */
-  width: 150px;     /* keep the same size */
+  position: fixed;
+  bottom: 30px; /* offset dla wszystkich */
+  width: 150px;
   cursor: pointer;
   transition: transform 0.2s ease, filter 0.2s ease;
+  z-index: 1100;
 }
 
-/* Back button - right aligned */
-#back-btn {
-  right: 20px;  /* distance from right edge */
-}
-
-/* Save button - placed to the left of back button */
-#save-btn {
-  right: 180px;  /* distance from right edge, next to back button */
+@media (max-width: 1200px) { /* dla smartfonów i tabletów */
+  #back-btn, #save-btn {
+    bottom: calc(env(safe-area-inset-bottom, 30px) + 25px); /* podniesienie dla mniejszych ekranów */
+    width: 120px; /* opcjonalnie zmniejsz przycisk */
+  }
+  #back-btn { right: 20px; }
+  #save-btn { right: 180px; }
 }
 
 /* Hover effects for both buttons */
@@ -249,6 +249,7 @@ body {
 #author-sign:hover {
   transform: scale(1.05); /* subtle hover effect */
 }
+
 
 
 
