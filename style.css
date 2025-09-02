@@ -47,23 +47,25 @@ body {
   filter: drop-shadow(0 0 5px gold); /* subtle hover glow */
 }
 
-
 #back-btn, #save-btn {
   position: fixed;
-  bottom: 30px; /* offset dla wszystkich */
+  bottom: 30px; 
   width: 150px;
   cursor: pointer;
   transition: transform 0.2s ease, filter 0.2s ease;
   z-index: 1100;
 }
 
-@media (max-width: 1200px) { /* dla smartfonów i tabletów */
+#back-btn { right: 20px; }
+#save-btn { right: 180px; }
+
+@media (max-width: 1200px) { /* for smartphones
   #back-btn, #save-btn {
-    bottom: calc(env(safe-area-inset-bottom, 30px) + 25px); /* podniesienie dla mniejszych ekranów */
+    bottom: calc(env(safe-area-inset-bottom, 30px) + 20px); /* podniesienie dla mniejszych ekranów */
     width: 120px; /* opcjonalnie zmniejsz przycisk */
   }
   #back-btn { right: 20px; }
-  #save-btn { right: 180px; }
+  #save-btn { right: 160px; }
 }
 
 /* Hover effects for both buttons */
@@ -249,6 +251,7 @@ body {
 #author-sign:hover {
   transform: scale(1.05); /* subtle hover effect */
 }
+
 
 
 
