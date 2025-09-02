@@ -48,8 +48,8 @@
     const shareHashtag = document.getElementById('share-btn');
     
     saveBtn.addEventListener('click', () => {
+      /*shareHashtag.style.opacity = '0';*/
 
-      shareHashtag.style.opacity = '0';
       // Take screenshot of entire body to capture background, logo, and opened pack
       html2canvas(document.body).then(canvas => {
         const link = document.createElement('a');
@@ -58,7 +58,7 @@
         link.click();
 
         // Ensure save button remains visible after screenshot
-        shareHashtag.style.opacity = '1';
+        /*shareHashtag.style.opacity = '1';*/
         saveBtn.style.display = 'block';
       });
     });
@@ -75,6 +75,7 @@
 
 </body>
 </html>
+
 
 
 
