@@ -147,9 +147,9 @@ body {
 }
 
 @keyframes pulse-shadow {
-  0% { filter: drop-shadow(0 0 3px var(--card-color)) brightness(0.95); }
-  50% { filter: drop-shadow(0 0 8px var(--card-color)) brightness(1.05); }
-  100% { filter: drop-shadow(0 0 3px var(--card-color)) brightness(0.95); }
+  0% { filter: drop-shadow(0 0 3px var(--card-color)) brightness(0.90); }
+  50% { filter: drop-shadow(0 0 9px var(--card-color)) brightness(1.10); }
+  100% { filter: drop-shadow(0 0 3px var(--card-color)) brightness(0.90); }
 }
 
 /* player name */
@@ -288,6 +288,7 @@ body {
     height: 40px;
   }
 }
+
 
 
 
