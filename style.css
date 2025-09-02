@@ -256,38 +256,17 @@ body {
 /* Responsive adjustments for small screens */
 @media (max-width: 500px) {
   #back-btn, #save-btn {
-    width: 120px;       /* mniejsze przyciski */
-    bottom: 10px;       /* trochę bliżej dolnej krawędzi */
+    width: 100px;        /* zmniejszamy szerokość przycisków */
+    bottom: 10px;
   }
-
   #back-btn {
-    right: 10px;        /* przy prawym brzegu */
+    right: 10px;
   }
-
   #save-btn {
-    right: 140px;       /* przycisk save obok back */
-  }
-
-  .card {
-    width: 180px;       /* zmniejszamy karty na małych ekranach */
-    height: 260px;
-  }
-
-  .face {
-    width: 90px;
-    height: 90px;
-    left: 80px;
-    top: 50px;
-  }
-
-  .stats {
-    font-size: 14px;
-    gap: 15px;
-  }
-
-  .name {
-    font-size: 18px;
-    top: 20px;
+    right: 120px;        /* zachowujemy odstęp między przyciskami */
   }
 }
+
+}
+
 
