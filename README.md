@@ -16,17 +16,20 @@ The simulator uses a rarity algorithm based on player rating and card color to w
 - 🎶 **Spotify Integration** – Click the [Spotify button](https://open.spotify.com/playlist/00i82lDzMDdiHWNjrIGAyw?utm_source=generator) to open the playlist in the Spotify app.  
 - 🏆 **Card Variety** – The simulator includes **720 cards** representing **408 players**.  
 - ⚙️ **Rarity Algorithm** – Cards are weighted by rating and version color for realistic draw probabilities.
-  
+- 📱 **Responsive Design** – The app works on mobile devices, but the **best experience is on a desktop computer**.
+
 ---
 
 ## 🐍 Data Preparation
 
-Three Python scripts 1 Excel file were written to prepare data for this project:  
+Three Python scripts and one Excel file were used to prepare data for this project:
 
-1. **csv_to_json.py** – abc  
-2. **images_checker.py** – abc 
-3. **webp_to_png.py** – abc
-4. **players_table.xlsx** - abc
+1. **csv_to_json.py** – Converts raw CSV player data into a structured JSON format that can be used in the simulator.  
+2. **images_checker.py** – Verifies that all required player, club and nation images exist and are correctly named; reports any missing or inconsistent files.  
+3. **webp_to_png.py** – Converts WebP image files (from the source data) into PNG format for compatibility with the web application.  
+4. **players_table.xlsx** – Contains the master table of all players, their ratings, positions, versions and other statistics used to generate the card data.
+
+
 
 [Link to the Python scripts repository]([https://github.com/MateuszMachowina](https://github.com/MateuszMachowina/python-apps/tree/main/Tools%20for%20PackOpenerF15))  
 
