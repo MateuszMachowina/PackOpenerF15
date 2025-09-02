@@ -19,6 +19,11 @@ body {
   animation: pulse-logo 3s infinite alternate; /* subtle logo glow animation */
 }
 
+#main-logo {
+  margin-top: 60px; /* 60px below top of viewport */
+  text-align: center; 
+}
+
 @keyframes pulse-logo {
   0% { filter: drop-shadow(0 0 1px rgb(255, 255, 255)); }
   50% { filter: drop-shadow(0 0 3px rgb(255, 255, 255)); }
@@ -252,6 +257,7 @@ body {
 #author-sign:hover {
   transform: scale(1.05); /* subtle hover effect */
 }
+
 
 
 
