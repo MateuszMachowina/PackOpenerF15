@@ -50,7 +50,7 @@ body {
 /* Back and Save buttons - responsive positioning */
 #back-btn, #save-btn {
   position: fixed;  /* fixed to stay visible on all screen sizes */
-  bottom: env(safe-area-inset-bottom, 20px); /* safe area for iOS/Android bottom bars */
+  bottom: env(safe-area-inset-bottom, 40px); /* safe area for iOS/Android bottom bars */
   width: 150px;     /* keep the same size */
   cursor: pointer;
   transition: transform 0.2s ease, filter 0.2s ease;
@@ -265,6 +265,7 @@ body {
 }
 
 }
+
 
 
 
