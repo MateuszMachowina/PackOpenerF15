@@ -82,17 +82,16 @@ body {
 }
 
 #pack-container {
-  display: none;
+  display: none;          /* hidden by default */
   position: fixed;
-  top: 200px; 
-  left: 50%;
-  transform: translateX(-50%);
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto; 
-  justify-content: center; 
-  align-items: flex-start; 
-  background: rgba(0,0,0,0.1);
-  z-index: 1000;
+  height: 100vh;
+  justify-content: center; /* center content horizontally */
+  align-items: center;     /* center content vertically */
+  background: rgba(0,0,0,0.1); /* semi-transparent overlay */
+  z-index: 1000;           /* on top of other elements */
 }
 
 .cards {
@@ -289,6 +288,7 @@ body {
     height: 40px;
   }
 }
+
 
 
 
