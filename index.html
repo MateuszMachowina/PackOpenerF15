@@ -30,14 +30,23 @@
 
   <!-- Main JavaScript -->
   <script src="script.js"></script>
-
+  
+  <!-- Share on X button -->
+  <a id="share-btn" 
+    href="https://twitter.com/intent/tweet?text=Check%20out%20%23MyFIFA15Pack!" 
+    target="_blank" 
+    rel="noopener noreferrer">
+    <img src="assets/ui/x.png" alt="Share on X" />
+  </a>
+  
   <!-- html2canvas library to capture screenshots -->
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
 
   <!-- Pack save screenshot logic -->
   <script>
     const saveBtn = document.getElementById('save-btn');
-
+    const shareHashtag = document.getElementById('share-btn');
+    
     saveBtn.addEventListener('click', () => {
 
       shareHashtag.style.opacity = '0';
@@ -64,16 +73,9 @@
     <img src="assets/ui/spotify.png" alt="Spotify Playlist">
   </a>
 
-  <!-- Share on X button -->
-  <a id="share-btn" 
-    href="https://twitter.com/intent/tweet?text=Check%20out%20%23MyFIFA15Pack!" 
-    target="_blank" 
-    rel="noopener noreferrer">
-    <img src="assets/ui/x.png" alt="Share on X" />
-  </a>
-  
 </body>
 </html>
+
 
 
 
