@@ -59,7 +59,7 @@ body {
   bottom: 20px;             /* distance from bottom of viewport */
   width: 150px;
   cursor: pointer;
-  z-index: 1100;            /* above pack container */
+  z-index: 1200;            /* above pack container */
   transition: transform 0.2s ease, filter 0.2s ease;
 }
 
@@ -342,6 +342,7 @@ body {
     height: 40px;
   }
 }
+
 
 
 
