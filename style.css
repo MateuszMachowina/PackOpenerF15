@@ -94,6 +94,14 @@ body {
   z-index: 1000;           /* on top of other elements */
 }
 
+/* On smaller screens (mobile), raise the pack a bit */
+@media (max-width: 1200px) {
+  #pack-container {
+    align-items: flex-start;   /* align to top */
+    padding-top: 100px;         /* push it down from the top */
+  }
+}
+
 .cards {
   display: flex;
   justify-content: center;
@@ -288,6 +296,7 @@ body {
     height: 40px;
   }
 }
+
 
 
 
