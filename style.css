@@ -21,7 +21,7 @@ body {
 
 @media (max-width: 1200px) {
   #main-logo {
-    margin-top: 80px; /* mniej na małych ekranach */
+    margin-top: 100px; /* for smaller screens */
   }
 }
 
@@ -258,6 +258,7 @@ body {
 #author-sign:hover {
   transform: scale(1.05); /* subtle hover effect */
 }
+
 
 
 
