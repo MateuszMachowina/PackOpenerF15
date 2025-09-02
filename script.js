@@ -81,7 +81,7 @@ function openPack() {
   const cardsDiv = document.getElementById('cards');
   cardsDiv.innerHTML = '';
 
-  const drawnPlayers = drawUniquePlayers(4); // draw 4 unique players per pack
+  const drawnPlayers = drawUniquePlayers(6); // draw 6 unique players per pack - here you can modify amt of players per pack
 
   drawnPlayers.forEach((player, i) => {
     const card = document.createElement('div');
@@ -191,3 +191,4 @@ function resetPack() {
   menu.style.alignItems = 'center';
   menu.style.height = '100vh';
 }
+
