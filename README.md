@@ -35,6 +35,15 @@ Three Python scripts and one Excel file were used to prepare data for this proje
 
 ---
 
+## 📊 Data Sources
+
+The data and graphics were sourced from:  
+
+- 🥗 [Foodbin](https://foodbin.com) – Card information and graphics.  
+- 🌐 [SoFiFa.com](https://sofifa.com) – Player statistics.
+
+---
+
 ## 🗂️ Project Structure
 
 ```
@@ -55,16 +64,7 @@ PackOpenerF15/
 
 ---
 
-## 📊 Data Sources
-
-The data and graphics were sourced from:  
-
-- 🥗 [Foodbin](https://foodbin.com) – Card information and graphics.  
-- 🌐 [SoFiFa.com](https://sofifa.com) – Player statistics.  
-
----
-
-## ⚖️ Legal Notice / License
+## ⚖️ Legal Notice
 
 All graphics, logos and data are the property of **EA Sports**. This project is **non-commercial** and created **for fun and personal enjoyment only**.  
 
