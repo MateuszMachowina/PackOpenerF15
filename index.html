@@ -37,12 +37,10 @@
   <!-- Pack save screenshot logic -->
   <script>
     const saveBtn = document.getElementById('save-btn');
-    const shareHashtag = document.getElementById('share-hashtag');
 
     saveBtn.addEventListener('click', () => {
 
-    shareHashtag.style.opacity = '0'; 
-
+      shareHashtag.style.opacity = '0';
       // Take screenshot of entire body to capture background, logo, and opened pack
       html2canvas(document.body).then(canvas => {
         const link = document.createElement('a');
@@ -50,8 +48,9 @@
         link.href = canvas.toDataURL();
         link.click();
 
-        // Ensure save button & hashtag remain visible after screenshot
+        // Ensure save button remains visible after screenshot
         shareHashtag.style.opacity = '1';
+        saveBtn.style.display = 'block';
       });
     });
   </script>
@@ -75,6 +74,7 @@
   
 </body>
 </html>
+
 
 
 
