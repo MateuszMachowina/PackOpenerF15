@@ -24,10 +24,13 @@ I have always learned by setting myself challenges, building projects and solvin
 - 🃏 **Open Pack** – Click the pack to reveal **6 unique players** in one pack.  
 - 💾 **Save Pack Screenshot** – Capture and download the pack image including background and logo using the **Save** button.  
 - 🔙 **Back Button** – Return to the main menu with the **Back** button.  
-- 🎶 **Spotify Integration** – Click the [Spotify button](https://open.spotify.com/playlist/00i82lDzMDdiHWNjrIGAyw?utm_source=generator) to open the playlist in the Spotify app.  
+- 🎶 **Spotify Integration** – Click the [Spotify button](https://open.spotify.com/playlist/00i82lDzMDdiHWNjrIGAyw?utm_source=generator) to open the playlist in the Spotify app.
+- 🐦 **Share on X (Twitter)** – Share your pack screenshot using the **Share** button with the hashtag `#MyFIFA15Pack`.  
 - 🏆 **Card Variety** – The simulator includes **720 cards** representing **408 players**.  
 - ⚙️ **Rarity Algorithm** – Cards are weighted by rating and version color for realistic draw probabilities.
 - 📱 **Responsive Design** – The app works on mobile devices, but the **best experience is on a desktop computer**.
+##
+**See what other players got! Check out all X posts under [#MyFIFA15Pack](https://twitter.com/hashtag/MyFIFA15Pack)!** 🎮⚽
 
 ---
 
