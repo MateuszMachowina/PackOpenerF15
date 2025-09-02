@@ -14,8 +14,8 @@ I have always learned by setting myself challenges, building projects and solvin
 - ⚽ [FIFA 15 - Mini FUT](https://scratch.mit.edu/projects/75730628/)
 - ⚽ [FIFA 16 - Mini FUT](https://scratch.mit.edu/projects/251721395/)
 - ⚽ [FIFA 17 - Mini FUT](https://scratch.mit.edu/projects/134293944/)
-- ⚽ [FIFA 19 - Mini FUT](https://scratch.mit.edu/projects/68231368/)
-- 🌐 [More projects on my profile!](https://scratch.mit.edu/users/Maszek/)
+- ⚽ [FIFA 19 - Mini FUT](https://scratch.mit.edu/projects/68231368/) (Over 2 Million views!)
+- 🌐 [More projects on my profile](https://scratch.mit.edu/users/Maszek/)
 
 ---
 
