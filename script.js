@@ -48,7 +48,7 @@ function weightedRandomPlayer(playersArray) {
   return weighted[index];
 }
 
-// function to draw a set of unique players, avoiding duplicates in the same pack
+// Draw a set of unique players, avoiding any duplicates by player_id
 function drawUniquePlayers(count) {
   if (players.length < count) return [];
 
@@ -59,9 +59,12 @@ function drawUniquePlayers(count) {
     const player = weightedRandomPlayer(copy);
     result.push(player);
 
-    // remove drawn player to prevent duplicates
-    const idx = copy.findIndex(p => p.player_id === player.player_id && p.VER === player.VER);
-    if (idx !== -1) copy.splice(idx, 1);
+    // remove all entries with the same player_id, regardless of VER
+    for (let i = copy.length - 1; i >= 0; i--) {
+      if (copy[i].player_id === player.player_id) {
+        copy.splice(i, 1);
+      }
+    }
   }
 
   return result;
@@ -191,5 +194,6 @@ function resetPack() {
   menu.style.alignItems = 'center';
   menu.style.height = '100vh';
 }
+
 
 
