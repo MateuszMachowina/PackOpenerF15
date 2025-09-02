@@ -61,8 +61,8 @@ body {
 
 @media (max-width: 1200px) { /* for smartphones */
   #back-btn, #save-btn {
-    bottom: calc(env(safe-area-inset-bottom, 30px) + 20px); /* podniesienie dla mniejszych ekranów */
-    width: 120px; /* opcjonalnie zmniejsz przycisk */
+    bottom: calc(env(safe-area-inset-bottom, 30px) + 20px); 
+    width: 120px; 
   }
   #back-btn { right: 20px; }
   #save-btn { right: 160px; }
@@ -251,6 +251,7 @@ body {
 #author-sign:hover {
   transform: scale(1.05); /* subtle hover effect */
 }
+
 
 
 
