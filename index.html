@@ -41,17 +41,17 @@
 
     saveBtn.addEventListener('click', () => {
 
-      shareHashtag.style.visibility = 'hidden';
+    shareHashtag.style.opacity = '0'; 
 
       // Take screenshot of entire body to capture background, logo, and opened pack
       html2canvas(document.body).then(canvas => {
         const link = document.createElement('a');
-        link.download = 'moja_paczka.png';  // default download filename
+        link.download = 'my_pack.png';  // default download filename
         link.href = canvas.toDataURL();
         link.click();
 
         // Ensure save button & hashtag remain visible after screenshot
-        shareHashtag.style.visibility = 'visible';
+        shareHashtag.style.opacity = '1';
       });
     });
   </script>
@@ -75,6 +75,7 @@
   
 </body>
 </html>
+
 
 
 
