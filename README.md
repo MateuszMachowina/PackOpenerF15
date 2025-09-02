@@ -42,7 +42,7 @@ Three Python scripts and one Excel file were used to prepare data for this proje
 
 
 
-[Link to the Python scripts repository]([https://github.com/MateuszMachowina](https://github.com/MateuszMachowina/python-apps/tree/main/Tools%20for%20PackOpenerF15))  
+[Link to the Python scripts repository](https://github.com/MateuszMachowina/python-apps/tree/main/Tools%20for%20PackOpenerF15)
 
 ---
 
