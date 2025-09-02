@@ -252,3 +252,42 @@ body {
 #author-sign:hover {
   transform: scale(1.05); /* subtle hover effect */
 }
+
+/* Responsive adjustments for small screens */
+@media (max-width: 500px) {
+  #back-btn, #save-btn {
+    width: 120px;       /* mniejsze przyciski */
+    bottom: 10px;       /* trochę bliżej dolnej krawędzi */
+  }
+
+  #back-btn {
+    right: 10px;        /* przy prawym brzegu */
+  }
+
+  #save-btn {
+    right: 140px;       /* przycisk save obok back */
+  }
+
+  .card {
+    width: 180px;       /* zmniejszamy karty na małych ekranach */
+    height: 260px;
+  }
+
+  .face {
+    width: 90px;
+    height: 90px;
+    left: 80px;
+    top: 50px;
+  }
+
+  .stats {
+    font-size: 14px;
+    gap: 15px;
+  }
+
+  .name {
+    font-size: 18px;
+    top: 20px;
+  }
+}
+
