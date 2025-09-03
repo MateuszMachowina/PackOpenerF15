@@ -64,6 +64,27 @@
     });
   </script>
 
+  <script>
+  function toggleLogoVisibility() {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    const logo = document.getElementById('main-logo');
+
+    if (width > 1600 && height < 2400) {
+      logo.style.opacity = "0"; // hide on iPad-like resolutions
+    } else {
+      logo.style.opacity = "1"; // visible everywhere else
+    }
+  }
+
+  // Run once on load
+  toggleLogoVisibility();
+
+  // Run again when resizing screen
+  window.addEventListener("resize", toggleLogoVisibility);
+</script>
+
+  
   <!-- Author signature linking to GitHub -->
   <a href="https://github.com/MateuszMachowina" target="_blank" id="author-sign">© 2025 MateuszMachowina</a>
 
@@ -75,6 +96,7 @@
 
 </body>
 </html>
+
 
 
 
