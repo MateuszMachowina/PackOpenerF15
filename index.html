@@ -65,26 +65,30 @@
   </script>
 
   <script>
-  function toggleLogoVisibility() {
-    const width = window.innerWidth;
-    const height = window.innerHeight;
-    const logo = document.getElementById('main-logo');
-
-    if (width > 1200 && width < 1700 && height > 1920 && height < 2400) {
-      logo.style.opacity = "0"; // hide on iPad-like resolutions
-    } else {
-      logo.style.opacity = "1"; // visible everywhere else
-    }
-  }
-
-  // Run once on load
-  toggleLogoVisibility();
-
-  // Run again when resizing screen
-  window.addEventListener("resize", toggleLogoVisibility);
-</script>
-
+    function toggleLogoVisibility() {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      const logo = document.getElementById('main-logo');
   
+      // Hide logo only on iPads (7th–11th gen) based on Safari viewport dimensions
+      if (
+        (width >= 810 && width <= 1194) && 
+        (height >= 1080 && height <= 1194)
+      ) {
+        logo.style.opacity = "0"; // hide logo on iPads
+      } else {
+        logo.style.opacity = "1"; // show logo everywhere else
+      }
+    }
+  
+    // Run once on page load
+    toggleLogoVisibility();
+  
+    // Run again whenever the window is resized
+    window.addEventListener("resize", toggleLogoVisibility);
+  </script>
+
+
   <!-- Author signature linking to GitHub -->
   <a href="https://github.com/MateuszMachowina" target="_blank" id="author-sign">© 2025 MateuszMachowina</a>
 
@@ -96,6 +100,7 @@
 
 </body>
 </html>
+
 
 
 
