@@ -69,16 +69,15 @@
       const width = window.innerWidth;
       const height = window.innerHeight;
       const logo = document.getElementById('main-logo');
+      const ua = navigator.userAgent || navigator.vendor || window.opera;
   
       // Hide logo only on iPads (7th–11th gen) based on Safari viewport dimensions
-      if (
-        (width >= 810 && width <= 1194) && 
-        (height >= 1080 && height <= 1194)
-      ) {
-        logo.style.opacity = "0"; // hide logo on iPads
-      } else {
-        logo.style.opacity = "1"; // show logo everywhere else
-      }
+      if (/iPad/.test(ua) || (navigator.platform === 'MacIntel' && 'ontouchend' in document)) {
+          // iPad w Safari
+          logo.style.opacity = "0";
+        } else {
+          logo.style.opacity = "1";
+        }
     }
   
     // Run once on page load
@@ -100,6 +99,7 @@
 
 </body>
 </html>
+
 
 
 
