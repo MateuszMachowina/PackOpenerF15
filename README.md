@@ -28,7 +28,7 @@ I have always learned by setting myself challenges, building projects and solvin
 - 🐦 **Share on X (Twitter)** – Share your pack screenshot using the **Share** button with the hashtag `#MyFIFA15Pack`.  
 - 🏆 **Card Variety** – The simulator includes **720 cards** representing **408 players**.  
 - ⚙️ **Rarity Algorithm** – Cards are weighted by rating and version color for realistic draw probabilities.
-- 📱 **Responsive Design** – The app works on mobile devices, but the **best experience is on a desktop computer**.
+- 📱 **Responsive Design** – The app works on mobile devices, but the **best experience is on a desktop computer and Ipad**.
 ##
 **See what other players got! Check out all X posts under [#MyFIFA15Pack](https://twitter.com/hashtag/MyFIFA15Pack)!** 🎮⚽
 
